@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Registration</title>
+    <link rel="stylesheet" href="salesRegistration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="profile">
+          <div class="pic"></div>
+          <div class="name">
+            <p>Your Name</p>
+            <p>Role in the system</p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="nav">
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="nav">
+          <a href="salesRegistration.html">Sales Management</a>
+        </div>
+        <div class="nav">
+          <a href="supplierRegistration.html">Supplier Management</a>
+        </div>
+        <div class="nav">
+          <a href="stockMgt.html">Stock Management</a>
+        </div>
+        <div class="nav">
+          <a href="transport.html">Transport Management</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="box">
+          <form action="">
+            <!--Section 1-->
+            <section>
+              <h2>Sales Registration</h2>
+              <div class="input-container">
+                <div class="input-section">
+                  <label for="salesDate">Sales Date</label>
+                  <input type="date" name="salesDate" id="salesDate" />
+                </div>
+
+                <div class="input-section">
+                  <label for="salesPerson">Sales Person</label>
+                  <select name="" id="salesPerson">
+                    <option value="" disabled selected>
+                      Select representative
+                    </option>
+                    <option value="1">Marie</option>
+                    <option value="2">Annie</option>
+                    <option value="3">Ian</option>
+                    <option value="4">Jemmie</option>
+                    <option value="5">Hans</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2>Customer details</h2>
+              <div class="input-container input">
+                <section>
+                  <div class="contain">
+                    <div class="input-section">
+                      <label for="fullname">Name</label>
+                      <input
+                        id="fullname"
+                        type="text"
+                        placeholder="Enter full name"
+                      />
+                    </div>
+
+                    <div class="input-section">
+                      <label for="email">Email</label>
+                      <input type="email" placeholder="Enter Email" />
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <div class="contain">
+                    <div class="input-section">
+                      <label for="tel">Phone Number</label>
+                      <input type="tel" placeholder="Enter Phone Number" />
+                    </div>
+
+                    <div class="input-section">
+                      <label for="customerType">Type</label>
+                      <select name="customerType" id="customerType">
+                        <option value="" disabled selected>
+                          Select customer type
+                        </option>
+                        <option value="1">First-time customer</option>
+                        <option value="2">Returning customer</option>
+                        <option value="3">Regular customer</option>
+                      </select>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <section>
+              <h2>Items</h2>
+              <div class="input-container">
+                <section>
+                  <div class="input-section">
+                    <label for="pdt-id">Pdt ID</label>
+                    <input type="text" placeholder="Pdt ID" />
+                  </div>
+
+                  <div class="input-section">
+                    <label for="pdt-id">Pdt ID</label>
+                    <input type="text" placeholder="Pdt ID" />
+                  </div>
+                </section>
+
+                <section>
+                  <div class="input-section">
+                    <label for="qty">Quantity</label>
+                    <input type="number" id="qty" />
+                  </div>
+
+                  <div class="input-section">
+                    <label for="qty">Quantity</label>
+                    <input type="number" id="qty" />
+                  </div>
+                </section>
+
+                <section>
+                  <div class="input-section">
+                    <label for="price">Unit Price</label>
+                    <input type="text" />
+                  </div>
+
+                  <div class="input-section">
+                    <label for="price">Unit Price</label>
+                    <input type="text" />
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <section>
+              <div class="buttons">
+                <button type="reset">Cancel</button>
+                <button type="submit">Submit</button>
+              </div>
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
